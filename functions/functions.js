@@ -8,3 +8,9 @@ function greet(person) {
 }
 console.log(greet("sanders"));
 console.log(greet(true));
+var simpleInterest = function (p, n, r) {
+    return (p * n * r) / 100;
+};
+console.log(simpleInterest(1000, 6, 2));
+console.log(simpleInterest(1000, 6));
+console.log(simpleInterest(1000, 6, 2, 545));
