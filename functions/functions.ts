@@ -20,3 +20,15 @@ const scold = function (person: string = "britta") {
 };
 console.log(scold());
 console.log(scold("pierce"));
+function addition(x: number, y: number): number {
+  return x + y;
+}
+console.log(addition(5, 3));
+function rando(x: number) {
+  if (Math.random() > 0.5) {
+    return x.toString();
+  }
+  return x;
+}
+console.log(rando(20) + 1);
+console.log(rando(0.4) + 1);

@@ -20,3 +20,13 @@ var scold = function (person) {
 };
 console.log(scold());
 console.log(scold("pierce"));
+function add(x, y) {
+    return x + y;
+}
+console.log(5, 3);
+function rando(x) {
+    if (Math.random() > 0.5) {
+        return x.toString();
+    }
+    return x;
+}
