@@ -15,3 +15,8 @@ const simpleInterest = (p: number, n: number, r: number) => {
 console.log(simpleInterest(1000, 6, 2));
 console.log(simpleInterest(1000, 6));
 console.log(simpleInterest(1000, 6, 2, 545));
+const scold = function (person: string = "britta") {
+  return `${person} you are the worst`;
+};
+console.log(scold());
+console.log(scold("pierce"));

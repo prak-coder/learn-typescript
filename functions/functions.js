@@ -14,3 +14,9 @@ var simpleInterest = function (p, n, r) {
 console.log(simpleInterest(1000, 6, 2));
 console.log(simpleInterest(1000, 6));
 console.log(simpleInterest(1000, 6, 2, 545));
+var scold = function (person) {
+    if (person === void 0) { person = "britta"; }
+    return "".concat(person, " you are the worst");
+};
+console.log(scold());
+console.log(scold("pierce"));
