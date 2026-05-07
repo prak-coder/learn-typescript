@@ -4,6 +4,7 @@ const userName: string = "troy";
 console.log(userName);
 let isLoading: boolean = true;
 isLoading = "n";
-// implicit typesx
+// implicit types
 let variableName = "x";
+//the any type
 let state;
