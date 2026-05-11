@@ -32,3 +32,11 @@ function rando(x: number) {
 }
 console.log(rando(20) + 1);
 console.log(rando(0.4) + 1);
+
+const colors = ["red", "blue", "pink"];
+colors.map((color) => color.toUpperCase());
+
+function printTwice(msg: string): void {
+  console.log(msg);
+  console.log(msg);
+}
