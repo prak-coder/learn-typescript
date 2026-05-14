@@ -22,17 +22,40 @@
 // const p: Point = { x: 5, y: 9 };
 
 // console.log(calcAddTwo(p));
-type Song = {
-  title: string;
-  duration: number;
-  year: number;
-  readonly artist: string;
-};
-const famous: Song = {
-  title: "famoussong",
-  duration: 3,
-  year: 2026,
-  artist: "prak",
-};
+// type Song = {
+//   title: string;
+//   duration: number;
+//   year: number;
+//   readonly artist: string;
+// };
+// const famous: Song = {
+//   title: "famoussong",
+//   duration: 3,
+//   year: 2026,
+//   artist: "prak",
+// };
 
-famous.artist = "you";
+// famous.artist = "you";
+
+type Circle = {
+  radius: number;
+};
+type Color = {
+  color: string;
+};
+type ColorfulCircle = Circle & Color;
+type ColorfulCircleNum = Circle &
+  Color & {
+    no: number;
+  };
+const happyFace: ColorfulCircle = {
+  radius: 5,
+  color: "yellow",
+};
+const happyFaceno: ColorfulCircleNum = {
+  radius: 5,
+  color: "yellow",
+  no: 2,
+};
+console.log(happyFace);
+console.log(happyFaceno);
