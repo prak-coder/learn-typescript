@@ -7,18 +7,32 @@
 // printName(user);
 // printName(halfUser);
 
-type Point = {
-  x: number;
-  y: number;
-  z?: number;
+// type Point = {
+//   x: number;
+//   y: number;
+//   z?: number;
+// };
+
+// function calcAddTwo(point: Point): Point {
+//   return {
+//     x: point.x + 2,
+//     y: point.y + 2,
+//   };
+// }
+// const p: Point = { x: 5, y: 9 };
+
+// console.log(calcAddTwo(p));
+type Song = {
+  title: string;
+  duration: number;
+  year: number;
+  readonly artist: string;
+};
+const famous: Song = {
+  title: "famoussong",
+  duration: 3,
+  year: 2026,
+  artist: "prak",
 };
 
-function calcAddTwo(point: Point): Point {
-  return {
-    x: point.x + 2,
-    y: point.y + 2,
-  };
-}
-const p: Point = { x: 5, y: 9 };
-
-console.log(calcAddTwo(p));
+famous.artist = "you";
