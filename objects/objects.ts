@@ -10,6 +10,7 @@
 type Point = {
   x: number;
   y: number;
+  z?: number;
 };
 
 function calcAddTwo(point: Point): Point {
