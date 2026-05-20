@@ -26,3 +26,12 @@ var breakFast = [
     { name: "cofee", price: 20 },
 ];
 console.log(getTotal(breakFast));
+function getTotalLoop(produts) {
+    var total = 0;
+    for (var _i = 0, produts_1 = produts; _i < produts_1.length; _i++) {
+        var product = produts_1[_i];
+        total += product.price;
+    }
+    return total;
+}
+console.log("loopTotal:".concat(getTotalLoop(breakFast)));

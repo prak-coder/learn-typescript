@@ -39,3 +39,13 @@ const breakFast: Product[] = [
   { name: "cofee", price: 20 },
 ];
 console.log(getTotal(breakFast));
+
+//use simple to avoid acc number type error
+function getTotalLoop(produts: Product[]): number {
+  let total: number = 0;
+  for (const product of produts) {
+    total += product.price;
+  }
+  return total;
+}
+console.log(`loopTotal:${getTotalLoop(breakFast)}`);
