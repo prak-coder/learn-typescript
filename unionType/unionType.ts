@@ -41,3 +41,15 @@ function calcTax(price: number | string, tax: number) {
 }
 console.log(calcTax("$50", 10));
 console.log(calcTax(20, 10));
+
+//array union types
+//an array hold only number or string
+
+const stuff: (number | string)[] = [1, 2, 3, "four", 5];
+
+//const stuff:number[]| string[] means stuff is array with only number or only strings
+
+const pointCord: (Point | Loc)[] = [];
+pointCord.push({ lat: 23.14, long: 65.45 });
+pointCord.push({ x: 5, y: 9 });
+console.log(pointCord);
