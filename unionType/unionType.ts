@@ -53,3 +53,12 @@ const pointCord: (Point | Loc)[] = [];
 pointCord.push({ lat: 23.14, long: 65.45 });
 pointCord.push({ x: 5, y: 9 });
 console.log(pointCord);
+
+let zero: 0 = 0; //literal type
+zero = 21;
+let mood: "happy" | "sad" | "angry";
+mood = "anxious";
+type DayOfWeek = "Monday" | "Tuesday" | "Wednesday";
+let today: DayOfWeek;
+today = "Monday";
+today = "mon";
