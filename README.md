@@ -7,3 +7,4 @@ Learn Typescript
   age: number;
   sayHi(): string;
   }
+  \*type vs interfaces. interface can extend can be re declared only object types

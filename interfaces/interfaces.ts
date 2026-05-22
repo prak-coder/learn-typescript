@@ -29,3 +29,21 @@ const myDog: Dog = {
   bark: () => "Woof Woof",
 };
 console.log(myDog);
+
+interface ServiceDog extends Dog {
+  name: string;
+  age: number;
+  breed: string;
+  bark: () => string;
+  job: "drug dog" | "ptsd dog" | "bomb dog";
+}
+
+const dynamite: ServiceDog = {
+  name: "dynamite",
+  age: 6,
+  breed: "bloodhound",
+  bark: () => "Bark",
+  job: "bomb dog",
+};
+console.log(dynamite.job);
+//type vs interfaces interface can extend can be re declared only object types
