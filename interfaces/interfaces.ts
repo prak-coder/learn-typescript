@@ -46,4 +46,4 @@ const dynamite: ServiceDog = {
   job: "bomb dog",
 };
 console.log(dynamite.job);
-//type vs interfaces interface can extend can be re declared only object types
+//type vs interfaces interface can extend can be re declared only object types can be redeclared add poperties after declaration
