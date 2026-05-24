@@ -10,8 +10,9 @@ Learn Typescript
   \*type vs interfaces. interface can extend can be re declared only object types
 
 /_Typescript compiler settings_/
-// "files": ["index.ts", "product.ts"] compile only these
+\*"files": ["index.ts", "product.ts"] compile only these
 // "include": ["src"],all in src direc
 // "exclude": ["src/donotTouch.ts"] except this file
 //good news vite handles all settings for frontend only allow null values have to setup if need
 //express and tsx can be used for backend also bun like vite for backend
+//type assertion tell ts that htmlElement as HtmlinputElement so we can get value from it

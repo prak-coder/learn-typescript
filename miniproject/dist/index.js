@@ -1,14 +1,46 @@
-function printDouble(msg) {
-    console.log(msg);
-    console.log(msg);
+// function printDouble(msg:string):void{
+//     console.log(msg);
+//     console.log(msg);
+// }
+const btn = document.getElementById('btn');
+const input = document.getElementById('todoinput');
+const form = document.querySelector('form');
+const list = document.querySelector('#todolist');
+const todos = readTodos();
+todos.forEach(createTodo);
+function readTodos() {
+    const todoJSON = localStorage.getItem('todos');
+    if (todoJSON === null)
+        return [];
+    return JSON.parse(todoJSON);
 }
-printDouble('printed two times');
-printDouble('printed two times');
-function handleClick() {
-    //   console.log('i am a button i was clicked');
-    alert('button got clicked');
+function handleSubmit(e) {
+    e.preventDefault();
+    const newTodo = {
+        text: input.value,
+        completed: false
+    };
+    createTodo(newTodo);
+    todos.push(newTodo);
+    saveTodos();
+    input.value = '';
 }
-const btn = document.querySelector('button');
-btn?.addEventListener('click', handleClick);
+function saveTodos() {
+    localStorage.setItem('todos', JSON.stringify(todos));
+}
+function createTodo(todo) {
+    const newLi = document.createElement('li');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.checked = todo.completed;
+    checkbox.addEventListener('change', function () {
+        todo.completed = checkbox.checked;
+        saveTodos();
+    });
+    newLi.append(todo.text);
+    newLi.append(checkbox);
+    list.append(newLi);
+}
+form.addEventListener('submit', handleSubmit);
 export {};
 //# sourceMappingURL=index.js.map
