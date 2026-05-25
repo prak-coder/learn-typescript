@@ -16,3 +16,7 @@ Learn Typescript
 //good news vite handles all settings for frontend only allow null values have to setup if need
 //express and tsx can be used for backend also bun like vite for backend
 //The ! (Non-null assertion operator) and as (Type assertion) are tools used in TypeScript to override the compiler's default type inference. They tell TypeScript that you know more about the value's type than the compiler does eg. htmlelement as htmlinputelement so input.value works and input=doc.get()! no null there is element
+//classes js revision class constructor extends super() before using this
+//setter and getter for reading or changing property can also do validation in set get methods.
+//static keyword for prop and method exist only on class not instance
+//#for private prop and set and get to acces that prop
