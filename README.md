@@ -15,4 +15,4 @@ Learn Typescript
 // "exclude": ["src/donotTouch.ts"] except this file
 //good news vite handles all settings for frontend only allow null values have to setup if need
 //express and tsx can be used for backend also bun like vite for backend
-//type assertion tell ts that htmlElement as HtmlinputElement so we can get value from it
+//The ! (Non-null assertion operator) and as (Type assertion) are tools used in TypeScript to override the compiler's default type inference. They tell TypeScript that you know more about the value's type than the compiler does eg. htmlelement as htmlinputelement so input.value works and input=doc.get()! no null there is element
