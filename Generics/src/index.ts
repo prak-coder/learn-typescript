@@ -38,3 +38,12 @@ console.log(randomElement([5,6,9,256,87,87,66,47,24,65,78,21,43,67,19   ]));
 console.log(randomElement(['ball','tap','nut']));
 console.log(randomElement([true,false,true,true]));
 
+
+function merge<T,U>(object1:T,object2:U){
+    return{
+        ...object1,
+    ...object2
+    }
+}
+
+console.log(merge({name:'troy'},{age:25,work:'student'}));
