@@ -20,3 +20,7 @@ Learn Typescript
 //setter and getter for reading or changing property can also do validation in set get methods.
 //static keyword for prop and method exist only on class not instance
 //#for private prop and set and get to acces that prop
+
+////////GENERICS///////
+\*little confusing.. funct doSomething(thing:number | string):number | string but if u want to say u give a number it return number and if string return string generics do that eg Array<number> or document.querySelector<HTMLInputElement>('#username')!;
+// when in tsx and using arrow func use <T,>
