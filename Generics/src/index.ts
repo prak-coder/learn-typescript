@@ -39,11 +39,36 @@ console.log(randomElement(['ball','tap','nut']));
 console.log(randomElement([true,false,true,true]));
 
 
-function merge<T,U>(object1:T,object2:U){
+// function merge<T,U>(object1:T,object2:U){
+//     return{
+//         ...object1,
+//     ...object2
+//     }
+// }
+
+
+function merge<T extends object ,U extends object>(object1:T,object2:U){
     return{
         ...object1,
     ...object2
     }
 }
-
 console.log(merge({name:'troy'},{age:25,work:'student'}));
+console.log(merge({num:256},{age:25,work:'student'}));
+
+
+function dont<T =string>():T[]{
+    return [];
+}
+dont<number>()
+
+//generic class
+class Playlist<T>{
+    public queue:T[]=[];
+    add(el:T){
+        this.queue.push(el)
+    }
+}
+
+// const songlist = new Playlist<Song>()
+// const videolist = new Playlist<Video>() song and video interfaces
