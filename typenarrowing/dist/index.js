@@ -44,4 +44,41 @@ function getRuntime(media) {
 }
 console.log(getRuntime({ title: "friends", noOfEpisode: 112, avgEpisodeDuration: 20 }));
 console.log(getRuntime({ title: "moneyball", duration: 130 }));
+// instanceof Date,Array or our owm classes
+console.log([] instanceof Date);
+function isCat(animal) {
+    return animal.numLives !== undefined;
+}
+function animalSound(value) {
+    if (isCat(value)) {
+        return "meaw";
+    }
+    else {
+        return "Woof Woof";
+    }
+}
+function farmAnimalSound(a) {
+    switch (a.kind) {
+        case "rooster":
+            return "kokra ko ko";
+            break;
+        case "cow":
+            return "mooooow";
+            break;
+        case "pig":
+            return "oink";
+            break;
+        default:
+            const _exhaustiveCheck = a;
+            return _exhaustiveCheck;
+    }
+}
+const cow = {
+    name: "liter",
+    weight: 120,
+    age: 5,
+    kind: "cow",
+};
+console.log(farmAnimalSound(cow));
 export {};
+//_exhaustiveCheck
