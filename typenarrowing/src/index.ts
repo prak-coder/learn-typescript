@@ -1,4 +1,4 @@
-//1.type of narrowing
+//1.typeof narrowing
 function triple(params: string | number) {
   if (typeof params === "string") {
     return params.repeat(3);
@@ -12,7 +12,7 @@ console.log(triple("hello-world "));
 //2.truthiness narrowing
 const el = document.getElementById("name");
 if (el) {
-  console.log(el.innerHTML);
+  console.log(el);
 }
 
 const printWord = (word?: string) => {
@@ -85,6 +85,7 @@ function animalSound(value: Cat | Dog) {
 }
 
 //discriminated union.. big word but just add a kind key and make it rooster
+
 interface Cow {
   name: string;
   age: number;
