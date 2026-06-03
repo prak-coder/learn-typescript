@@ -1,11 +1,5 @@
 import type { JSX } from "react";
-
-interface Item {
-  id: number;
-  product: string;
-  quantity: string;
-  Emoji: string;
-}
+import type Item from "../models/item";
 interface ShoppingListProps {
   items: Item[];
 }
@@ -19,7 +13,7 @@ export default function ShoppingList({
       <ul style={{ display: "inline-block" }}>
         {items.map((item) => (
           <li key={item.id}>
-            {item.product} -{item.quantity}-{item.Emoji}
+            {item.product}-{item.quantity}-{item.Emoji}
           </li>
         ))}
       </ul>
