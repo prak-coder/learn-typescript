@@ -1,3 +1,4 @@
+export {};
 let age: Number = 20;
 //age ='twenty'
 console.log(age);
