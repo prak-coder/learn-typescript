@@ -1,10 +1,11 @@
-const a: number = 21;
-console.log(a);
-const userName: string = "troy";
+let age: Number = 20;
+//age ='twenty'
+console.log(age);
+let userName: String;
+userName = "Troy";
 console.log(userName);
-let isLoading: boolean = true;
-isLoading = "n";
-// implicit types
-let variableName = "x";
-//the any type
-let state;
+// userName =true
+// const isLoading:Boolean = false;
+let isLoading: Boolean = false;
+// isLoading='true';
+console.log(isLoading);

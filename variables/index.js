@@ -1,10 +1,12 @@
-var a = 21;
-console.log(a);
-var userName = "troy";
+"use strict";
+let age = 20;
+//age ='twenty'
+console.log(age);
+let userName;
+userName = "Troy";
 console.log(userName);
-var isLoading = true;
-isLoading = "n";
-// implicit typesx
-var variableName = "x";
-var state;
- 
+// userName =true
+// const isLoading:Boolean = false;
+let isLoading = false;
+// isLoading='true';
+console.log(isLoading);
