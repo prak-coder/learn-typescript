@@ -8,8 +8,8 @@ function twoFer(personName) {
     if (personName === void 0) { personName = "you"; }
     return "one for ".concat(personName, ",one for me");
 }
-console.log(twoFer("prak"));
 console.log(twoFer());
+console.log(twoFer("Elton"));
 // twoFer() => "One for you, one for me"
 // twoFer("Elton") => "One for Elton, one for me"
 // **********************************************

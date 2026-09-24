@@ -4,13 +4,11 @@
 // Write a function called "twoFer" that accepts a person's name
 // It should return a string in the format "one for <name>, one for me"
 // If no name is provided, it should default to "you"
-
 function twoFer(personName: string = "you"): string {
   return `one for ${personName},one for me`;
 }
-console.log(twoFer("prak"));
 console.log(twoFer());
-
+console.log(twoFer("Elton"));
 // twoFer() => "One for you, one for me"
 // twoFer("Elton") => "One for Elton, one for me"
 
