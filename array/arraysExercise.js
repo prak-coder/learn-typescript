@@ -8,30 +8,26 @@ var ages = [];
 // **********************************************
 // Create an array variable called gameBoard that starts as an empty array.
 // It should be typed to hold a 2 dimensional array of strings
-var gameBoard = [];
+var gameBoard;
+gameBoard = [["o", "o", "x"]];
+// console.log(gameBoard);
+gameBoard.push(["x", "o", "x"]);
+console.log(gameBoard);
+var product1 = { name: "coffee mug", price: 11.5 };
+console.log(product1);
 // **********************************************
 // ******************* PART 4 *******************
 // **********************************************
 // Write a function called getTotal that accepts an array of Product types
 // It should return the sum of all the products' prices
-function getTotal(produts) {
-    var totalPrice = produts.reduce(function (acc, product) {
-        return acc + product.price;
-    }, 0);
-    return totalPrice;
+function getTotal(products) {
+    var sum = 0;
+    products.map(function (product) {
+        sum += product.price;
+    });
+    return sum;
 }
-var breakFast = [
-    { name: "idly", price: 50 },
-    { name: "dosa", price: 70 },
-    { name: "cofee", price: 20 },
-];
-console.log(getTotal(breakFast));
-function getTotalLoop(produts) {
-    var total = 0;
-    for (var _i = 0, produts_1 = produts; _i < produts_1.length; _i++) {
-        var product = produts_1[_i];
-        total += product.price;
-    }
-    return total;
-}
-console.log("loopTotal:".concat(getTotalLoop(breakFast)));
+console.log(getTotal([
+    { name: "gallery", price: 550 },
+    { name: "monte", price: 250 },
+]));
