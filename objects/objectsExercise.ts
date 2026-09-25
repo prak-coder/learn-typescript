@@ -39,7 +39,7 @@ const cats: Movie = {
 
 // For example...
 // getProfit(cats) => -21166652
-function getProfit(movie: Movie): number {
+let getProfit = (movie: Movie): number => {
   return movie.boxOffice.grossWorldwide - movie.boxOffice.budget;
-}
+};
 console.log(getProfit(dune));

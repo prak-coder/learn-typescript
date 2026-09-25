@@ -23,7 +23,7 @@ var cats = {
 // It should return the movie's worldwide gross minus its budget
 // For example...
 // getProfit(cats) => -21166652
-function getProfit(movie) {
+var getProfit = function (movie) {
     return movie.boxOffice.grossWorldwide - movie.boxOffice.budget;
-}
+};
 console.log(getProfit(dune));
