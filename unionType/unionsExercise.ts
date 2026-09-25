@@ -3,8 +3,7 @@
 // **********************************************
 // Create a variable called highScore that can be a number OR a boolean
 
-let highScore: number | boolean = 26;
-highScore = true;
+let highScore: number | boolean;
 
 // **********************************************
 // ******************* PART 2 *******************
@@ -12,16 +11,23 @@ highScore = true;
 // create an array called stuff
 // it can be an array of numbers OR an array of strings
 // it cannot be an array of numbers and strings (mixed together)
-let stuffs: number[] | string[];
-stuffs = [1, 2, 8];
-stuffs = ["one", "two"];
-stuffs = [1, ""];
+
+let stuff: number[] | string[];
+stuff = [1, 2, 3];
+stuff = ["red", "blue"];
+// stuff = ["red", 4];
+
 // **********************************************
 // ******************* PART 3 *******************
 // **********************************************
 // Create a literal type called SkillLevel
 // There are 4 allowed values: "Beginner", "Intermediate", "Advanced", and "Expert"
+
 type SkillLevel = "Beginner" | "Intermediate" | "Advanced" | "Expert";
+
+let cookingSkillofBritta: SkillLevel = "Beginner";
+// cookingSkillofBritta = "notgood";
+
 // **********************************************
 // ******************* PART 4 *******************
 // **********************************************
@@ -30,6 +36,7 @@ type SkillLevel = "Beginner" | "Intermediate" | "Advanced" | "Expert";
 // age must be a number
 // sport must be "ski" or "snowboard"
 // level must be a value from the SkillLevel type (from above)
+
 type SkiSchoolStudent = {
   name: string;
   age: number;
@@ -50,31 +57,37 @@ type SkiSchoolStudent = {
 // s should be a number
 // l should be a number
 
-// Create an array called colors that can hold a mixture of RGB and HSL color types
-type RGBcolor = {
+type RGBColor = {
   r: number;
   g: number;
   b: number;
 };
-type HSLcolor = {
+type HSLColor = {
   h: number;
   s: number;
   l: number;
 };
+// Create an array called colors that can hold a mixture of RGB and HSL color types
 
-let color: (RGBcolor | HSLcolor)[];
+let colors: (RGBColor | HSLColor)[];
+colors = [
+  { r: 10, g: 5, b: 8 },
+  { h: 8, s: 5, l: 5 },
+];
 
 // **********************************************
 // ******************* PART 6 *******************
 // **********************************************
 // Write a function called greet that accepts a single string OR an array of strings
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
-function greet(value: string | string[]) {
-  if (typeof value === "string") {
-    console.log(`Hello ${value}`);
+function greet(mystring: string | string[]): void {
+  if (typeof mystring === "string") {
+    console.log(`Hello, <${mystring}>`);
   } else {
-    for (let element of value) {
-      console.log(`Hello ${element}`);
+    for (let person of mystring) {
+      console.log(`Hello, <${person}>`);
     }
   }
 }
+greet("troy");
+greet(["jeff", "annie"]);
