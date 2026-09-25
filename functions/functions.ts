@@ -35,6 +35,8 @@ console.log(rando(0.4) + 1);
 
 const colors = ["red", "blue", "pink"];
 colors.map((color) => color.toUpperCase());
+colors.map((color) => color.toFixed(0)));
+
 
 function printTwice(msg: string): void {
   console.log(msg);

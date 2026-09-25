@@ -10,7 +10,7 @@
 // type Point = {
 //   x: number;
 //   y: number;
-//   z?: number;
+//   z?: number;//optional property
 // };
 
 // function calcAddTwo(point: Point): Point {

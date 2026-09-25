@@ -1,5 +1,6 @@
 Learn Typescript
-
+let coordinate:{x:number,y:number} = {x=54,y=33} is valid
+excess propertie error in obj literal but in variable then passed as value excess will be ignored
 - Tuples are fixed length array with exact types [number,string] //[200,'ok']
   *enums are named constants enum orderStaus { PENDIND,DELIVERED }
   *interfaces are like type but objects with interface keyword interface Person {
