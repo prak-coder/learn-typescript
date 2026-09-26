@@ -5,8 +5,8 @@ interface Person {
 }
 
 const user: Person = {
-  name: "prakash",
-  age: 30,
+  name: "troy",
+  age: 18,
   sayHi: () => "Hi",
 };
 console.log(user.name);
