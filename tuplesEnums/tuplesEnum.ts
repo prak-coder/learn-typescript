@@ -5,11 +5,11 @@ const myhttpResponses: httpResponse[] = [
   [200, "OK"],
   [404, "Not Found"],
 ];
-//exception to tuples dont push or pop on tuples
-//myhttpResponses[0].push("1"); //DONT
-console.log(myhttpResponses);
+// //exception to tuples dont push or pop on tuples
+// //myhttpResponses[0].push("1"); //DONT
+// console.log(myhttpResponses);
 
-//Enums
+// //Enums
 enum OrderStatus {
   PENDING,
   SHIPPED,
