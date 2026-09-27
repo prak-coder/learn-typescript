@@ -8,34 +8,28 @@ var user = {
 console.log(user.name);
 console.log(user.sayHi());
 console.log(user.nickname);
-// interface Dog {
-//   name: string;
-//   age: number;
-// }
-// interface Dog {
-//   breed: string;
-//   bark: () => string;
-// }
-// const myDog: Dog = {
-//   name: "browny",
-//   age: 5,
-//   breed: "indog",
-//   bark: () => "Woof Woof",
-// };
-// console.log(myDog);
-// interface ServiceDog extends Dog {
-//   name: string;
-//   age: number;
-//   breed: string;
-//   bark: () => string;
-//   job: "drug dog" | "ptsd dog" | "bomb dog";
-// }
-// const dynamite: ServiceDog = {
-//   name: "dynamite",
-//   age: 6,
-//   breed: "bloodhound",
-//   bark: () => "Bark",
-//   job: "bomb dog",
-// };
-// console.log(dynamite.job);
-//type vs interfaces interface can extend can be re declared only object types can be redeclared add poperties after declaration
+var myDog = {
+    name: "browny",
+    age: 5,
+    breed: "indog",
+    bark: function () { return "Woof Woof"; },
+};
+console.log(myDog);
+console.log(myDog.bark());
+var dynamite = {
+    name: "dynamite",
+    age: 6,
+    breed: "bloodhound",
+    bark: function () { return "Bark"; },
+    job: "bomb dog",
+};
+console.log(dynamite);
+console.log(dynamite.job);
+var abed = {
+    name: "abed",
+    id: 1245,
+    email: "abed@movie.com",
+    level: "senior",
+    languages: ["JS", "java"],
+};
+console.log(abed);
