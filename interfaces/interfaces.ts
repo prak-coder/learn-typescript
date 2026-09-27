@@ -11,10 +11,11 @@ const user: Person = {
   name: "troy",
   age: 18,
   sayHi: () => "Hi",
-  nickname: "t-bone",
+  // nickname: "t-bone",
 };
-// console.log(user.name);
-// console.log(user.sayHi());
+console.log(user.name);
+console.log(user.sayHi());
+console.log(user.nickname);
 
 // interface Dog {
 //   name: string;
