@@ -20,6 +20,8 @@ excess propertie error in obj literal but in variable then passed as value exces
 
 //The ! (Non-null assertion operator) and as (Type assertion) are tools used in TypeScript to override the compiler's default type inference. They tell TypeScript that you know more about the value's type than the compiler does eg. htmlelement as htmlinputelement so input.value works and input=doc.get()! no null there is element
 // tried miniproject again add handlesubmit to form querySelector
+gitea in docker affected github calendar
+
 //classes js revision class constructor extends super() before using this
 //setter and getter for reading or changing property can also do validation in set get methods.
 //static keyword for prop and method exist only on class not instance
