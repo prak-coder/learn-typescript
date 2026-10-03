@@ -2,6 +2,7 @@ Learn Typescript
 let coordinate:{x:number,y:number} = {x=54,y=33} is valid
 excess propertie error in obj literal but in variable then passed as value excess will be ignored
 - Tuples are fixed length array with exact types [number,string] //[200,'ok']-correct ['o',565] -err [200,'ok',4] -err
+
   *enums are named constants enum orderStaus { PENDIND,DELIVERED }
   //adding const infront of enum reduce js code 
   *interfaces are like type but objects with interface keyword interface Person {
@@ -16,13 +17,19 @@ excess propertie error in obj literal but in variable then passed as value exces
 // "include": ["src"],all in src direc
 // "exclude": ["src/donotTouch.ts"] except this file
 //good news vite handles all settings for frontend only allow null values have to setup if need
+
 //express and tsx can be used for backend also bun like vite for backend
 
 //The ! (Non-null assertion operator) and as (Type assertion) are tools used in TypeScript to override the compiler's default type inference. They tell TypeScript that you know more about the value's type than the compiler does eg. htmlelement as htmlinputelement so input.value works and input=doc.get()! no null there is element
+
+
 // tried miniproject again add handlesubmit to form querySelector
 gitea in docker affected github calendar
 
+//lib[] ts knows about dom by default but can be changed by adding to lib[] array
+
 //classes js revision class constructor extends super() before using this
+
 //setter and getter for reading or changing property can also do validation in set get methods.
 //static keyword for prop and method exist only on class not instance
 //#for private prop and set and get to acces that prop
